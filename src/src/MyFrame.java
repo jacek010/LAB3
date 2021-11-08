@@ -2,24 +2,22 @@ package src;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class MyFrame extends JFrame {
+public class MyFrame extends JFrame{
 
-    public MyFrame(){
-        super("Nazwa okienka");
+    public MyFrame() {
+        super("Login screen");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(300, 100);
+        setSize(300, 200);
         setLocation(500, 500);
-        setResizable(true);
-        setLayout(new FlowLayout());
+        setResizable(false);
 
-        add(new JButton("Button 1"));
-        add(new JButton("Button 2"));
-        add(new JButton("Button 3"));
 
-        JPanel buttonPanel = new Przycisk();
-        add(buttonPanel);
-        pack();
+        JPanel panel = new Panel();
+        add(panel);
+
         setVisible(true);
     }
 }
