@@ -20,9 +20,14 @@ public class MyFrame extends JFrame{
 
 
         JPanel panel = new JPanel();
+        JPanel rysowanie = new Rysowanie();
         panel.setBounds(0,0,660,443);
         setContentPane(panel);
         panel.setLayout(null);
+
+
+
+
 
         JButton runButton = new JButton("Run out");
         runButton.addMouseListener(new MouseAdapter() {
@@ -41,6 +46,9 @@ public class MyFrame extends JFrame{
         });
         runButton.setBounds(0,350,100,40);
         panel.add(runButton);
+
+
+
 
         setVisible(true);
     }
